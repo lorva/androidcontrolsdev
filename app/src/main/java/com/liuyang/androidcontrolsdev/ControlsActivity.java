@@ -36,6 +36,15 @@ public class ControlsActivity extends AppCompatActivity {
          * */
 
 
+        // bg_edittext_c:圆角边框固定颜色带左侧图标
+        // https://blog.csdn.net/weixin_42397605/article/details/81737146
+        /**
+         *
+         *  android:background="@drawable/bg_edittext_c"
+         *
+         * */
+
+
 
     }
 }
