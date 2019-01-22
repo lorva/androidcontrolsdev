@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- usercenter edittext -->
+    <style name="myThemeEdittextB" parent="Theme.AppCompat.Light">
+        <!--colorControlNormal 没有获取焦点时候下划线的颜色-->
+        <item name="colorControlNormal">@color/colorControlNormalEdittextB</item>
+        <!--colorControlActivated 获取焦点时候光标与下划线的颜色-->
+        <item name="colorControlActivated">@color/colorControlActivatedEdittextB</item>
+        <item name="android:textColor">#ff00cc</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
