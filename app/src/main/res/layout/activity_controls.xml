@@ -73,13 +73,16 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="默认样式" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="36dp"
+            android:background="@drawable/bg_button_a"
+            android:text="bg_button_a:圆角按钮自定义边框颜色"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/button3"

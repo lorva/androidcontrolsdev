@@ -11,6 +11,10 @@ public class ControlsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_controls);
 
 
+        //设计规范
+        // https://www.25xt.com/android
+
+
         // 拾色器
         // http://link.fobshanghai.com/rgbcolor.htm
 
@@ -43,6 +47,23 @@ public class ControlsActivity extends AppCompatActivity {
          *  android:background="@drawable/bg_edittext_c"
          *
          * */
+
+
+
+
+
+
+
+
+
+        // bg_button_a:圆角按钮自定义边框颜色
+        // https://blog.csdn.net/java_go_go_go/article/details/81220747
+        /**
+         *
+         * android:background="@drawable/bg_button_a"
+         *
+         * */
+
 
 
 
