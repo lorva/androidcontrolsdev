@@ -29,6 +29,13 @@ public class ControlsActivity extends AppCompatActivity {
          * */
 
 
+        // 背景设为@null去除边框
+        // https://www.cnblogs.com/rayray/p/3154985.html
+        /**
+         * android:background="@null"
+         * */
+
+
 
     }
 }
