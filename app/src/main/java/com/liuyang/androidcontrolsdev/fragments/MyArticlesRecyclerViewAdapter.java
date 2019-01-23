@@ -40,6 +40,7 @@ public class MyArticlesRecyclerViewAdapter extends RecyclerView.Adapter<MyArticl
         holder.mIdView.setText(mValues.get(position).id);
         holder.mContentView.setText(mValues.get(position).content);
 
+        //列表项点击事件
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

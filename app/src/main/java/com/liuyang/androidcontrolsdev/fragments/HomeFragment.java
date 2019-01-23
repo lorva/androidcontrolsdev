@@ -3,10 +3,12 @@ package com.liuyang.androidcontrolsdev.fragments;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.liuyang.androidcontrolsdev.R;
 
@@ -29,6 +31,11 @@ public class HomeFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+
+    //
+    private Button btnPostMsg;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -68,6 +75,25 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        //init views
+        btnPostMsg = (Button)getActivity().findViewById(R.id.btnPostMsg);
+        btnPostMsg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //
+                if (mListener != null) {
+                    mListener.postMsgToActivity("这个消息来自Fragment");
+                }
+
+            }
+        });
+    }
+
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
@@ -105,5 +131,7 @@ public class HomeFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+        //
+        void postMsgToActivity(String mesage);
     }
 }

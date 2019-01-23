@@ -117,7 +117,7 @@ public class NavActivity extends AppCompatActivity implements HomeFragment.OnFra
 
         mTextMessage = (TextView) findViewById(R.id.message);
 
-        //替换fragment容器
+        //设置默认fragment(替换fragment容器)
         getSupportFragmentManager().beginTransaction().replace(R.id.mainfragmentcontainer, fragmentHome).show(fragmentHome).commit();
 
         //
@@ -136,12 +136,21 @@ public class NavActivity extends AppCompatActivity implements HomeFragment.OnFra
     @Override
     public void onFragmentInteraction(Uri uri) {
 
-        Toast.makeText(this,"交流,角楼",Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "来自fragment的调用", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void postMsgToActivity(String mesage) {
+
+        Toast.makeText(this, "：" + mesage, Toast.LENGTH_SHORT).show();
 
     }
 
     @Override
     public void onListFragmentInteraction(DummyContent.DummyItem item) {
+
+        Toast.makeText(this, "点击:" + item.content, Toast.LENGTH_SHORT).show();
 
     }
 
