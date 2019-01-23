@@ -13,6 +13,7 @@ public class ControlsActivity extends AppCompatActivity {
 
         //设计规范
         // https://www.25xt.com/android
+        // https://www.ui.cn/detail/374101.html
 
 
         // 拾色器

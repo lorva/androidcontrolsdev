@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
 //        this.startActivity(in);
 
 
-        Intent in = new Intent(this, ControlsActivity.class);
+//        Intent in = new Intent(this, ControlsActivity.class);
+//        this.startActivity(in);
+
+
+        Intent in = new Intent(this, NavActivity.class);
         this.startActivity(in);
 
 
